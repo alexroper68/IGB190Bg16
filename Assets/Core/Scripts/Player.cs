@@ -49,6 +49,7 @@ public class Player : Unit
     private const string RESPAWN_ANIMATION = "Idle";
     private const float PLAYER_ROTATION_SPEED = 5;
     private static Color OUTLINE_COLOR = new Color(0.5f, 0.5f, 1.0f, 0.03f);
+    
 
     /// <summary>
     /// Perform initial setup.
@@ -118,6 +119,10 @@ public class Player : Unit
     /// </summary>
     public override void TakeDamage(float amount, bool isCritical, Unit damagingUnit, IVisualCodeHandler damageSource)
     {
+        const  float  helpModifier = 1.0f; 
+        const  float  maxDamageReduction = 0.1f; 
+        float  healthPerc  = health / stats[ Stat .MaxHealth]. GetValue ();
+        amount  *=  Mathf . Max ( Mathf . Pow ( healthPerc , helpModifier),  1.0f - maxDamageReduction);
         base.TakeDamage(amount, isCritical, damagingUnit, damageSource);
     }
 

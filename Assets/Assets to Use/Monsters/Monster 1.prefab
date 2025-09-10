@@ -55,9 +55,9 @@ MonoBehaviour:
   unitName: Zombie
   health: 100
   resource: 0
-  baseDamage: 10
+  baseDamage: 5
   baseAttacksPerSecond: 2
-  baseMaxHealth: 200
+  baseMaxHealth: 400
   baseMaxResource: 100
   baseMovementSpeed: 1
   baseArmor: 0
@@ -72,7 +72,9 @@ MonoBehaviour:
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  target: {fileID: 0}
   isDead: 0
+  faction: 1
   spawnEffect: {fileID: 4062287519753572544, guid: 332ddaa5f7738b142ac986212c018770, type: 3}
   goldModifier: 1
   experienceModifier: 1
@@ -165,6 +167,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c7c859a80d5d1514ba52891ff2773968, type: 3}
+  m_Resource: {fileID: 8300000, guid: c7c859a80d5d1514ba52891ff2773968, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
