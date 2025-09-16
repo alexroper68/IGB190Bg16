@@ -9561,8 +9561,8 @@ MonoBehaviour:
   baseMaxResource: 200
   baseMovementSpeed: 3
   baseArmor: 0
-  baseCriticalStrikeChance: 0.1
-  baseCriticalStrikeDamage: 1.5
+  baseCriticalStrikeChance: 0.02
+  baseCriticalStrikeDamage: 3
   baseHealthRegen: 20
   baseResourceRegen: 8
   baseAttackRange: 2
@@ -15290,8 +15290,8 @@ MonoBehaviour:
   baseMaxResource: 100
   baseMovementSpeed: 3
   baseArmor: 10
-  baseCriticalStrikeChance: 0.1
-  baseCriticalStrikeDamage: 1.5
+  baseCriticalStrikeChance: 0.02
+  baseCriticalStrikeDamage: 3
   baseHealthRegen: 20
   baseResourceRegen: -1
   baseAttackRange: 2.5
@@ -29090,8 +29090,8 @@ MonoBehaviour:
   baseMaxResource: 100
   baseMovementSpeed: 3.5
   baseArmor: 0
-  baseCriticalStrikeChance: 0.1
-  baseCriticalStrikeDamage: 1.5
+  baseCriticalStrikeChance: 0.02
+  baseCriticalStrikeDamage: 3
   baseHealthRegen: 20
   baseResourceRegen: 2
   baseAttackRange: 2
@@ -29122,7 +29122,7 @@ MonoBehaviour:
   bonusMovementSpeedPerLevel: 0.2
   bonusResourcePerLevel: 20
   bonusArmorPerLevel: 0
-  bonusCriticalChancePerLevel: 0.05
+  bonusCriticalChancePerLevel: 0.01
   bonusCriticalDamagePerLevel: 0
   bonusHealthRegenPerLevel: 1
   bonusResourceRegenPerLevel: 0
@@ -31577,9 +31577,9 @@ MonoBehaviour:
     empoweredMonsterRareDropChance: 0.2
     empoweredMonsterLegendaryDropChance: 0
   _playerExperienceValues:
-    baseMonsterXP: 100
-    startingXPPerLevel: 1000
-    additionalMaxXPPerLevel: 0
+    baseMonsterXP: 50
+    startingXPPerLevel: 100
+    additionalMaxXPPerLevel: 50
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.25
     increasedDamagePerPlayerLevel: 0.25
