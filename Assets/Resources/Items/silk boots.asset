@@ -17,10 +17,10 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: d687f263463ca254ba211f0a97124ada, type: 3}
+  itemIcon: {fileID: 21300000, guid: a49193b555b34a046a80294f41fb8bf9, type: 3}
   itemType: 4
   itemRarity: 1
-  itemCost: 0
+  itemCost: 1500
   randomStatCount: 0
   guaranteedStats:
   - stat: 6

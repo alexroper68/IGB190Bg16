@@ -20,7 +20,7 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: b9ff5a91fb0b29f4d86d7000bf7a0b7c, type: 3}
   itemType: 3
   itemRarity: 1
-  itemCost: 0
+  itemCost: 1500
   randomStatCount: 0
   guaranteedStats:
   - stat: 1
