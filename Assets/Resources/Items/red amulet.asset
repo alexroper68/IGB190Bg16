@@ -10,23 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Weapon
+  m_Name: red amulet
   m_EditorClassIdentifier: 
-  itemName: Weapon
+  itemName: red amulet
   itemDescription: 
   itemTag: 
   itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
-  itemType: 2
-  itemRarity: 0
-  itemCost: 500
+  itemIcon: {fileID: 21300000, guid: ec888f7f279932d479dd9d2f3047a4ba, type: 3}
+  itemType: 1
+  itemRarity: 1
+  itemCost: 1500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 0
-    minimum: 10
-    maximum: 10
-    isPercent: 0
+  - stat: 3
+    minimum: 0.1
+    maximum: 0.1
+    isPercent: 1
+  - stat: 8
+    minimum: 0.1
+    maximum: 0.1
+    isPercent: 1
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
@@ -35,17 +39,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1047703595
+      scriptUID: 328395206
       hasWait: 0
       eventNodes:
-      - rid: 4304569468181020672
+      - rid: 4304569634912731136
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 930453683
+      scriptUID: 389587965
       hasWait: 0
       eventNodes:
-      - rid: 4304569468181020673
+      - rid: 4304569634912731137
       conditionNodes: []
       actionNodes: []
   references:
@@ -53,7 +57,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569468181020672
+    - rid: 4304569634912731136
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -74,7 +78,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569468181020673
+    - rid: 4304569634912731137
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
