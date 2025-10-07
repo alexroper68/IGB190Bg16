@@ -24,8 +24,8 @@ MonoBehaviour:
   randomStatCount: 0
   guaranteedStats:
   - stat: 0
-    minimum: 10
-    maximum: 10
+    minimum: 40
+    maximum: 60
     isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
