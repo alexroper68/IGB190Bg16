@@ -10,23 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Armor
+  m_Name: revitalising band
   m_EditorClassIdentifier: 
-  itemName: Armor
+  itemName: revitalising band
   itemDescription: 
   itemTag: 
   itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: f525fc04d7de01647a20ff599129b2f1, type: 3}
-  itemType: 3
-  itemRarity: 0
-  itemCost: 500
-  randomStatCount: 0
-  guaranteedStats:
-  - stat: 1
-    minimum: 10
-    maximum: 10
-    isPercent: 0
+  itemIcon: {fileID: 21300000, guid: 50f02582f340d894492baa25ce0f47bb, type: 3}
+  itemType: 0
+  itemRarity: 2
+  itemCost: 3000
+  randomStatCount: 1
+  guaranteedStats: []
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
@@ -35,17 +31,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 2055215292
+      scriptUID: 750222624
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722498
+      - rid: 4304570032390406320
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1375930473
+      scriptUID: 916120952
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722499
+      - rid: 4304570032390406321
       conditionNodes: []
       actionNodes: []
   references:
@@ -53,7 +49,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569558383722498
+    - rid: 4304570032390406320
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -74,7 +70,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569558383722499
+    - rid: 4304570032390406321
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

@@ -1,0 +1,1381 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ef298ccb713614cb4f11ef9d2c39cd, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  engine:
+    scripts:
+    - scriptName: Game Start
+      scriptUID: 1302963331
+      hasWait: 0
+      eventNodes:
+      - rid: 2305486816113065984
+      conditionNodes: []
+      actionNodes:
+      - rid: 2305486816113065985
+      - rid: 2305486816113065988
+      - rid: 2305486816113065990
+    - scriptName: Go to region
+      scriptUID: 990178867
+      hasWait: 0
+      eventNodes:
+      - rid: 2305486816113066064
+      conditionNodes: []
+      actionNodes:
+      - rid: 2305486816113066066
+      - rid: 2305486816113066068
+      - rid: 2305486816113066071
+      - rid: 2305486816113066073
+      - rid: 2305486816113066076
+      - rid: 2305486816113066107
+      - rid: 2305486816113066109
+      - rid: 2305486816113066112
+      - rid: 2305486816113066114
+      - rid: 2305486816113066117
+    - scriptName: Pick Up Item Prompt
+      scriptUID: 404822244
+      hasWait: 0
+      eventNodes:
+      - rid: 2305486816113066163
+      conditionNodes:
+      - rid: 2305486816113066164
+      actionNodes:
+      - rid: 2305486816113066166
+      - rid: 2305486816113066169
+    - scriptName: equip item prompt
+      scriptUID: 1287613273
+      hasWait: 0
+      eventNodes:
+      - rid: 2305486816113066170
+      conditionNodes: []
+      actionNodes:
+      - rid: 2305486816113066171
+      - rid: 2305486816113066174
+    - scriptName: tutorial finish actions
+      scriptUID: 2075546379
+      hasWait: 0
+      eventNodes:
+      - rid: 2305486816113066175
+      conditionNodes: []
+      actionNodes:
+      - rid: 2305486816113066176
+      - rid: 2305486816113066179
+      - rid: 2305486816113066181
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2305486816113065984
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptLoaded
+        functionDescription: Time/On script loaded
+        functionDynamicDescription: On script loaded
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 2305486816113065985
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113065986
+        - rid: 2305486816113065987
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113065986
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113065985
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: '  You will need to explore the temple to uncover the mystery'
+        options: []
+    - rid: 2305486816113065987
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113065985
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 2305486816113065988
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: Wait
+        functionDescription: Flow/Wait
+        functionDynamicDescription: Wait for $ second(s)
+        functionEvaluators:
+        - rid: 2305486816113065989
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113065989
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113065988
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 2305486816113065990
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113065991
+        - rid: 2305486816113065992
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113065991
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113065990
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Hold left click to move.  Try moving to the glowing circle in the
+          next room
+        options: []
+    - rid: 2305486816113065992
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113065990
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 9999
+    - rid: 2305486816113066064
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: UnitEntersRegion
+        functionDescription: Region/Unit enters region
+        functionDynamicDescription: Unit enters region named $
+        functionEvaluators:
+        - rid: 2305486816113066065
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 2305486816113066065
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066064
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Tutorial Goal
+        options: []
+    - rid: 2305486816113066066
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyRegions
+        functionDescription: Region/Destroy Region
+        functionDynamicDescription: Destroy regions named $
+        functionEvaluators:
+        - rid: 2305486816113066067
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066067
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066066
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Tutorial Goal
+        options: []
+    - rid: 2305486816113066068
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113066069
+        - rid: 2305486816113066070
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066069
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066068
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: ' You feel a dark presence awakening'
+        options: []
+    - rid: 2305486816113066070
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066068
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 6
+    - rid: 2305486816113066071
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ChangeGameMusic
+        functionDescription: Audio/Play Music
+        functionDynamicDescription: Change Game Music to $
+        functionEvaluators:
+        - rid: 2305486816113066072
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Audio
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066072
+      type: {class: AudioNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Audio Clip
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066071
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 8300000, guid: f85db3de60be62d459f0d0c7cb76ff58, type: 3}
+    - rid: 2305486816113066073
+      type: {class: NestingActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DoActionsXTimesStoringVariable
+        functionDescription: Flow/For Loop
+        functionDynamicDescription: 'Do actions $ times (Variable Storing Current
+          Iteration: $)'
+        functionEvaluators:
+        - rid: 2305486816113066074
+        - rid: 2305486816113066075
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Loop
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066074
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066073
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 4
+    - rid: 2305486816113066075
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066073
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Loop ID
+        options: []
+    - rid: 2305486816113066076
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnUnit
+        functionDescription: Unit/Spawn Monster
+        functionDynamicDescription: Spawn $ at $
+        functionEvaluators:
+        - rid: 2305486816113066077
+        - rid: 2305486816113066078
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 1
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066077
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066076
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: {fileID: 5560953499317727810, guid: 3af91c814aab5ea4ca125fde32872b0a, type: 3}
+    - rid: 2305486816113066078
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Location
+        functionName: RandomPointNearUnit
+        functionDescription: Random/Random Point Near Unit
+        functionDynamicDescription: Random point within $ of $
+        functionEvaluators:
+        - rid: 2305486816113066105
+        - rid: 2305486816113066106
+        parentNode:
+          rid: 2305486816113066076
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
+    - rid: 2305486816113066105
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Range
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 10
+    - rid: 2305486816113066106
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 2305486816113066107
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: Wait
+        functionDescription: Flow/Wait
+        functionDynamicDescription: Wait for $ second(s)
+        functionEvaluators:
+        - rid: 2305486816113066108
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066108
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066107
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 2
+    - rid: 2305486816113066109
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113066110
+        - rid: 2305486816113066111
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066110
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066109
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: '  You are under attack! Hold left-click on monsters to attack them.
+          Attacking enemies with this basic  attack generates resources you can later
+          spend on powerful abilities'
+        options: []
+    - rid: 2305486816113066111
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066109
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 8
+    - rid: 2305486816113066112
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: Wait
+        functionDescription: Flow/Wait
+        functionDynamicDescription: Wait for $ second(s)
+        functionEvaluators:
+        - rid: 2305486816113066113
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066113
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066112
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 8
+    - rid: 2305486816113066114
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113066115
+        - rid: 2305486816113066116
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066115
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066114
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: '  Some monsters are empowered and are much more powerful.  Hold right
+          click on them to spend resources and attack them with your more powerful
+          ability'
+        options: []
+    - rid: 2305486816113066116
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066114
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 9999
+    - rid: 2305486816113066117
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnEmpoweredUnit
+        functionDescription: Unit/Spawn Empowered Monster
+        functionDynamicDescription: Spawn empowered $ at $
+        functionEvaluators:
+        - rid: 2305486816113066118
+        - rid: 2305486816113066119
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066118
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066117
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: {fileID: 1649265759049038220, guid: 02102f2f786a49d418694911eea0f16f, type: 3}
+    - rid: 2305486816113066119
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Location
+        functionName: RandomPointNearUnit
+        functionDescription: Random/Random Point Near Unit
+        functionDynamicDescription: Random point within $ of $
+        functionEvaluators:
+        - rid: 2305486816113066161
+        - rid: 2305486816113066162
+        parentNode:
+          rid: 2305486816113066117
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
+    - rid: 2305486816113066161
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Range
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 10
+    - rid: 2305486816113066162
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 2305486816113066163
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: WhenUnitIsKilled
+        functionDescription: Unit/Unit is killed
+        functionDynamicDescription: 'When a unit is killed (Presets: <color=yellow>Killed
+          Unit</color>, <color=yellow>Killing Unit</color>, <color=yellow>Killing
+          Ability</color>, <color=yellow>Is Critical</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Killed Unit
+        - Killing Unit
+        - Killing Ability
+        - Is Critical
+    - rid: 2305486816113066164
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: UnitIsEmpowered
+        functionDescription: Unit/Unit Is Empowered
+        functionDynamicDescription: $ is empowered
+        functionEvaluators:
+        - rid: 2305486816113066165
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 2305486816113066165
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066164
+        parentNodeID: 0
+        indent: 0
+        presetName: Killed Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 2305486816113066166
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113066167
+        - rid: 2305486816113066168
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066167
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066166
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Click on its item name to add it to your inventory
+        options: []
+    - rid: 2305486816113066168
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066166
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 9999
+    - rid: 2305486816113066169
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DisableScript
+        functionDescription: Flow/Disable This Script
+        functionDynamicDescription: Disable this script
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Cancel
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066170
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnItemPickedUp
+        functionDescription: Player/Player picks up an item
+        functionDynamicDescription: 'When the player picks up an item (Presets: <color=yellow>Triggering
+          Item</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Pickup
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Triggering Item
+    - rid: 2305486816113066171
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113066172
+        - rid: 2305486816113066173
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066172
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066171
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: '  Open the character window with the C key, then drag the item into
+          the correct equipment slot'
+        options: []
+    - rid: 2305486816113066173
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066171
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 9999
+    - rid: 2305486816113066174
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DisableScript
+        functionDescription: Flow/Disable This Script
+        functionDynamicDescription: Disable this script
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Cancel
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066175
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnItemEquipped
+        functionDescription: Player/Player equips an item
+        functionDynamicDescription: 'When the player equips an item (Presets: <color=yellow>Triggering
+          Item</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Pickup
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Triggering Item
+    - rid: 2305486816113066176
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowTutorialMessage
+        functionDescription: UI Actions/Show Tutorial Message
+        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
+        functionEvaluators:
+        - rid: 2305486816113066177
+        - rid: 2305486816113066178
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066177
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066176
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: You  will need to explore further to uncover what is summoning the
+          undead
+        options: []
+    - rid: 2305486816113066178
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066176
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 10
+    - rid: 2305486816113066179
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyRegions
+        functionDescription: Region/Destroy Region
+        functionDynamicDescription: Destroy regions named $
+        functionEvaluators:
+        - rid: 2305486816113066180
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305486816113066180
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305486816113066179
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Tutorial Blocker
+        options: []
+    - rid: 2305486816113066181
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DisableScript
+        functionDescription: Flow/Disable This Script
+        functionDynamicDescription: Disable this script
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Cancel
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1

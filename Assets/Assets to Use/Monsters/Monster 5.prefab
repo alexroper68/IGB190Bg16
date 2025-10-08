@@ -4841,6 +4841,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5009,11 +5012,14 @@ MonoBehaviour:
   baseAttackRange: 2.2
   abilities:
   - {fileID: 11400000, guid: a754a6374a0c8674cbcc3b4c8912ec17, type: 2}
+  - {fileID: 11400000, guid: 560baecd31bad934e98e3e487ef92d83, type: 2}
   lastAbilityCast: {fileID: 0}
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  target: {fileID: 0}
   isDead: 0
+  faction: 1
   spawnEffect: {fileID: -68291847361665647, guid: c0ee2f05980c4c74f922864461f883d8, type: 3}
   goldModifier: 1
   experienceModifier: 1
@@ -5063,6 +5069,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c7c859a80d5d1514ba52891ff2773968, type: 3}
+  m_Resource: {fileID: 8300000, guid: c7c859a80d5d1514ba52891ff2773968, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -5324,6 +5331,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5673,6 +5683,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6016,6 +6029,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6587,7 +6603,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8337647643441485411
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6601,6 +6617,7 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

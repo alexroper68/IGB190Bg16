@@ -1,0 +1,603 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
+  m_Name: shining bulwark
+  m_EditorClassIdentifier: 
+  itemName: shining bulwark
+  itemDescription: 
+  itemTag: 
+  itemFlavourText: 
+  classRequirement: 
+  itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
+  itemType: 3
+  itemRarity: 2
+  itemCost: 3000
+  randomStatCount: 0
+  guaranteedStats:
+  - stat: 1
+    minimum: 10
+    maximum: 10
+    isPercent: 0
+  randomisableStats: []
+  minimumDropLevel: 0
+  canPurchaseInShop: 1
+  canDropOffMonster: 1
+  template: {fileID: 0}
+  engine:
+    scripts:
+    - scriptName: Item Equipped
+      scriptUID: 183774631
+      hasWait: 0
+      eventNodes:
+      - rid: 4304570032390406167
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Item Unequipped
+      scriptUID: 1577149025
+      hasWait: 0
+      eventNodes:
+      - rid: 4304570032390406168
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: sheen
+      scriptUID: 1199470767
+      hasWait: 0
+      eventNodes:
+      - rid: 4304570032390406169
+      conditionNodes: []
+      actionNodes:
+      - rid: 4304570032390406171
+      - rid: 4304570032390406196
+      - rid: 4304570032390406233
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4304570032390406167
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptLoaded
+        functionDescription: Time/On script loaded
+        functionDynamicDescription: On script loaded
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 4304570032390406168
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptUnloaded
+        functionDescription: Time/On script unloaded
+        functionDynamicDescription: On script unloaded
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 4304570032390406169
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnTimerFinished
+        functionDescription: Time/Do every X Seconds
+        functionDynamicDescription: Every $ seconds
+        functionEvaluators:
+        - rid: 4304570032390406170
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 4304570032390406170
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406169
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0.5
+    - rid: 4304570032390406171
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SetUnitGroupVariable
+        functionDescription: Variables/Set Unit Group Variable
+        functionDynamicDescription: Set Unit Group named $ to $
+        functionEvaluators:
+        - rid: 4304570032390406172
+        - rid: 4304570032390406173
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Variable
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4304570032390406172
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Variable Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406171
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: targets
+        options: []
+    - rid: 4304570032390406173
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Unit Group
+        functionName: AllEnemiesWithinRangeOfUnit2
+        functionDescription: All Enemies Near Unit
+        functionDynamicDescription: All enemies within $ of $
+        functionEvaluators:
+        - rid: 4304570032390406194
+        - rid: 4304570032390406195
+        parentNode:
+          rid: 4304570032390406171
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4304570032390406194
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 3
+    - rid: 4304570032390406195
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Item Owner
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4304570032390406196
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DecreaseStatPercentUnitGroup
+        functionDescription: Unit/Decrease Stat/Decrease Stat of Unit Group by Percent
+        functionDynamicDescription: 'Decrease $ of $ by $ for $ (Buff Name: $ | Max
+          Stacks: $)'
+        functionEvaluators:
+        - rid: 4304570032390406197
+        - rid: 4304570032390406198
+        - rid: 4304570032390406199
+        - rid: 4304570032390406200
+        - rid: 4304570032390406201
+        - rid: 4304570032390406202
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4304570032390406197
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406196
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Damage
+        options:
+        - Damage
+        - Armor
+        - Damage Taken
+        - Attack Speed
+        - Max Health
+        - Max Resource
+        - Movement Speed
+        - Cooldown Reduction
+        - Ability Cost Reduction
+        - Resource Generation
+        - Critical Chance
+        - Critical Damage
+    - rid: 4304570032390406198
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Unit Group
+        functionName: GetUnitGroupVariable
+        functionDescription: Unit Group Variable
+        functionDynamicDescription: 'Unit Group: $'
+        functionEvaluators:
+        - rid: 4304570032390406232
+        parentNode:
+          rid: 4304570032390406196
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4304570032390406199
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Percent
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406196
+        parentNodeID: 2
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: '%'
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 40
+    - rid: 4304570032390406200
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406196
+        parentNodeID: 3
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: s
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 4304570032390406201
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406196
+        parentNodeID: 4
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: sheeny
+        options: []
+    - rid: 4304570032390406202
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406196
+        parentNodeID: 5
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 4304570032390406232
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Variable Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: targets
+        options: []
+    - rid: 4304570032390406233
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnEffectOnUnitGroup
+        functionDescription: Feedback/Play Effect on Unit Group
+        functionDynamicDescription: $ $ effect on $ for $ at $ scale
+        functionEvaluators:
+        - rid: 4304570032390406234
+        - rid: 4304570032390406235
+        - rid: 4304570032390406236
+        - rid: 4304570032390406237
+        - rid: 4304570032390406238
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Effect
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4304570032390406234
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406233
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Play or Refresh
+        options:
+        - Play
+        - Stop
+        - Play or Refresh
+    - rid: 4304570032390406235
+      type: {class: EffectNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Effect
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406233
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 1447509499946109569, guid: 6024171063f1a5c4a9cacfac213e16ff, type: 3}
+    - rid: 4304570032390406236
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Unit Group
+        functionName: GetUnitGroupVariable
+        functionDescription: Unit Group Variable
+        functionDynamicDescription: 'Unit Group: $'
+        functionEvaluators:
+        - rid: 4304570032390406248
+        parentNode:
+          rid: 4304570032390406233
+        parentNodeID: 2
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4304570032390406237
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406233
+        parentNodeID: 3
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: s
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 4304570032390406238
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406233
+        parentNodeID: 4
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: x
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 4304570032390406248
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Variable Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: targets
+        options: []
