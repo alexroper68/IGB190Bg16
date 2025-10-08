@@ -14,11 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Ring
   itemDescription: 
-  randomStatCount: 0
-  itemCost: 0
+  itemTag: 
+  itemFlavourText: 
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 70429bf7d5f2bf341be1c31492f4ecd0, type: 3}
   itemType: 0
   itemRarity: 0
+  itemCost: 0
+  randomStatCount: 0
+  guaranteedStats: []
+  randomisableStats: []
+  minimumDropLevel: 0
+  canPurchaseInShop: 1
+  canDropOffMonster: 1
+  template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
@@ -35,11 +44,14 @@ MonoBehaviour:
       - rid: 248813236419559490
       conditionNodes: []
       actionNodes: []
-  template: {fileID: 0}
-  guaranteedStats: []
-  randomisableStats: []
-  canPurchaseInShop: 1
-  canDropOffMonster: 1
+    - scriptName: revitalizization
+      scriptUID: 1905806487
+      hasWait: 0
+      eventNodes:
+      - rid: 4304570032390406322
+      conditionNodes: []
+      actionNodes:
+      - rid: 4304570032390406323
   references:
     version: 2
     RefIds:
@@ -57,10 +69,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Timer
         allowValue: 1
         allowPreset: 1
@@ -78,12 +90,99 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Timer
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 4304570032390406322
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnPickupHealth
+        functionDescription: Player/Player picks up a health globe
+        functionDynamicDescription: 'When the player picks up a health globe (Presets:
+          <color=yellow>Health Restored</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Pickup
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Health Restored
+    - rid: 4304570032390406323
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddResource
+        functionDescription: Unit/Add Resource
+        functionDynamicDescription: Add $ resource to $
+        functionEvaluators:
+        - rid: 4304570032390406324
+        - rid: 4304570032390406325
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4304570032390406324
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406323
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 15
+    - rid: 4304570032390406325
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4304570032390406323
+        parentNodeID: 1
+        indent: 0
+        presetName: Ability Owner
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}

@@ -55,9 +55,9 @@ MonoBehaviour:
   unitName: Zombie
   health: 100
   resource: 0
-  baseDamage: 5
+  baseDamage: 10
   baseAttacksPerSecond: 2
-  baseMaxHealth: 400
+  baseMaxHealth: 200
   baseMaxResource: 100
   baseMovementSpeed: 1
   baseArmor: 0
@@ -68,6 +68,7 @@ MonoBehaviour:
   baseAttackRange: 2.2
   abilities:
   - {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
+  - {fileID: 11400000, guid: 8d929580639645c458bb864ad808ce8b, type: 2}
   lastAbilityCast: {fileID: 0}
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}
