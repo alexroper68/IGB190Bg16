@@ -101,7 +101,7 @@ MonoBehaviour:
   resource: 0
   baseDamage: 10
   baseAttacksPerSecond: 2
-  baseMaxHealth: 100
+  baseMaxHealth: 200
   baseMaxResource: 100
   baseMovementSpeed: 1
   baseArmor: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   healthBarType: 0
   uiSize: 1
   uiHeight: 2
-  spawnLevel: 1
+  spawnLevel: 2
   spawnLikelihood: 3
 --- !u!54 &2156350940946629938
 Rigidbody:
