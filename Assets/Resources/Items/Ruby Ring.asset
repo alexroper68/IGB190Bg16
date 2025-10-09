@@ -10,23 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet
+  m_Name: Ruby Ring
   m_EditorClassIdentifier: 
-  itemName: Amulet
+  itemName: Ruby Ring
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: A token of luck, glowing warm and radient.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
-  itemType: 1
+  itemIcon: {fileID: 21300000, guid: a8bc19c7daadb6044b071d234a1d62a3, type: 3}
+  itemType: 0
   itemRarity: 0
-  itemCost: 500
+  itemCost: 0
   randomStatCount: 0
-  guaranteedStats:
-  - stat: 8
-    minimum: 0.1
-    maximum: 0.1
-    isPercent: 1
+  guaranteedStats: []
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
@@ -35,17 +31,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 242063374
+      scriptUID: 605154118
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722496
+      - rid: 6394421181470474278
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 128023782
+      scriptUID: 1251272681
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722497
+      - rid: 6394421181470474279
       conditionNodes: []
       actionNodes: []
   references:
@@ -53,7 +49,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569558383722496
+    - rid: 6394421181470474278
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -74,7 +70,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569558383722497
+    - rid: 6394421181470474279
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

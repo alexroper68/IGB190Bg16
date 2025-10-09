@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Weapon
+  m_Name: Sourcerers RIng
   m_EditorClassIdentifier: 
-  itemName: Weapon
+  itemName: Sourcerers RIng
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: Forged in secret by the king that ruled all, it hums with ancient
+    power, engulfing those who dare touch it..
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
-  itemType: 2
-  itemRarity: 0
+  itemIcon: {fileID: 21300000, guid: 868c7767c75364f408d3ccad1813a095, type: 3}
+  itemType: 0
+  itemRarity: 2
   itemCost: 0
   randomStatCount: 0
   guaranteedStats: []
@@ -31,17 +32,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 670969356
+      scriptUID: 1385633336
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559495
+      - rid: 6394421181470474282
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 845581728
+      scriptUID: 1062299730
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559496
+      - rid: 6394421181470474283
       conditionNodes: []
       actionNodes: []
   references:
@@ -49,7 +50,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 248813236419559495
+    - rid: 6394421181470474282
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -70,7 +71,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 248813236419559496
+    - rid: 6394421181470474283
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

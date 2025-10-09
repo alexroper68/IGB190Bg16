@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Weapon
+  m_Name: Champion's Boots
   m_EditorClassIdentifier: 
-  itemName: Weapon
+  itemName: Champion's Boots
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: A stylish and strong pair of boots, stride proudly as those who
+    walked before you were champions.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
-  itemType: 2
-  itemRarity: 0
+  itemIcon: {fileID: 21300000, guid: 41db8b9820856b742a74c3273f8e2dff, type: 3}
+  itemType: 4
+  itemRarity: 1
   itemCost: 0
   randomStatCount: 0
   guaranteedStats: []
@@ -31,17 +32,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 670969356
+      scriptUID: 420208884
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559495
+      - rid: 6394421181470474284
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 845581728
+      scriptUID: 1559566731
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559496
+      - rid: 6394421181470474285
       conditionNodes: []
       actionNodes: []
   references:
@@ -49,7 +50,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 248813236419559495
+    - rid: 6394421181470474284
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -70,7 +71,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 248813236419559496
+    - rid: 6394421181470474285
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
