@@ -25977,14 +25977,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Write your own  custom description here!
+  m_text: 'the kinetic is an expert martial artist that holds command over the materials
+    of the world. using this, they throw their enemies off balance
 
 
     <color=#88FF88>Strength</color>:
-    ???
+    crowd control
 
 
-    <color=#FF8888>Weakness</color>: ???'
+    <color=#FF8888>Weakness</color>: the model moves backwards
+    sometimes'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
   m_sharedMaterial: {fileID: -5745236825215515014, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
