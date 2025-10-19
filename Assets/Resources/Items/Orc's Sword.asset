@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Orc's Sword
   m_EditorClassIdentifier: 
   itemName: Orc's Sword
-  itemDescription: 
+  itemDescription: A strong, high damage blade that favors strength.
   itemTag: 
   itemFlavourText: A merciless weapon that only knows vicotry or death.
   classRequirement: 
@@ -22,10 +22,30 @@ MonoBehaviour:
   itemRarity: 2
   itemCost: 0
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
-  canPurchaseInShop: 1
+  guaranteedStats:
+  - stat: 0
+    minimum: 0.16
+    maximum: 0.18
+    isPercent: 1
+  - stat: 1
+    minimum: 0.18
+    maximum: 0.22
+    isPercent: 1
+  randomisableStats:
+  - stat: 10
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 0
+  - stat: 11
+    minimum: 0.35
+    maximum: 0.45
+    isPercent: 0
+  - stat: 4
+    minimum: 0.15
+    maximum: 0.18
+    isPercent: 1
+  minimumDropLevel: 28
+  canPurchaseInShop: 0
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:

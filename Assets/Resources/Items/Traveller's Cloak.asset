@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Traveller's Cloak
   m_EditorClassIdentifier: 
   itemName: Traveller's Cloak
-  itemDescription: 
+  itemDescription: A swifty cloak that provices increased movement speed.
   itemTag: 
   itemFlavourText: Dusty and stained, but will still aid in stealthing those who
     wish not to be seen.
@@ -21,11 +21,19 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 9154282eca33d764096b484f95f485eb, type: 3}
   itemType: 3
   itemRarity: 0
-  itemCost: 0
+  itemCost: 900
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 6
+    minimum: 0.06
+    maximum: 0.1
+    isPercent: 1
+  randomisableStats:
+  - stat: 7
+    minimum: 0.04
+    maximum: 0.05
+    isPercent: 1
+  minimumDropLevel: 3
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

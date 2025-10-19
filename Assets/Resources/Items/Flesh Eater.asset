@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Flesh Eater
   m_EditorClassIdentifier: 
   itemName: Flesh Eater
-  itemDescription: 
+  itemDescription: A powerrful heavy weapon that aids in self recovery and sustained
+    attacks.
   itemTag: 
   itemFlavourText: It grows sharper with every soul consumed, eating anything in
     it's path.
@@ -23,10 +24,30 @@ MonoBehaviour:
   itemRarity: 2
   itemCost: 0
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
-  canPurchaseInShop: 1
+  guaranteedStats:
+  - stat: 0
+    minimum: 0.16
+    maximum: 0.18
+    isPercent: 1
+  - stat: 11
+    minimum: 0.4
+    maximum: 0.5
+    isPercent: 0
+  randomisableStats:
+  - stat: 3
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  - stat: 9
+    minimum: 0.24
+    maximum: 0.3
+    isPercent: 1
+  - stat: 4
+    minimum: 0.15
+    maximum: 0.18
+    isPercent: 1
+  minimumDropLevel: 25
+  canPurchaseInShop: 0
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:

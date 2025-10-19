@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Swashbucklers's Jacket
   m_EditorClassIdentifier: 
   itemName: Swashbucklers's Jacket
-  itemDescription: 
+  itemDescription: A fashion choice that grants speed and critical hit damage.
   itemTag: 
   itemFlavourText: Although stylish, it is very impracticle in battle, and that's
     okay.
@@ -23,10 +23,22 @@ MonoBehaviour:
   itemRarity: 1
   itemCost: 0
   randomStatCount: 0
-  guaranteedStats: []
+  guaranteedStats:
+  - stat: 6
+    minimum: 0.2
+    maximum: 0.3
+    isPercent: 1
+  - stat: 10
+    minimum: 0.12
+    maximum: 0.18
+    isPercent: 0
+  - stat: 11
+    minimum: 0.16
+    maximum: 0.2
+    isPercent: 0
   randomisableStats: []
-  minimumDropLevel: 0
-  canPurchaseInShop: 1
+  minimumDropLevel: 14
+  canPurchaseInShop: 0
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:

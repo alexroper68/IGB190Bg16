@@ -13,18 +13,26 @@ MonoBehaviour:
   m_Name: Ruby Ring
   m_EditorClassIdentifier: 
   itemName: Ruby Ring
-  itemDescription: 
+  itemDescription: Increased base attack with critical hit chance.
   itemTag: 
   itemFlavourText: A token of luck, glowing warm and radient.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: a8bc19c7daadb6044b071d234a1d62a3, type: 3}
   itemType: 0
   itemRarity: 0
-  itemCost: 0
+  itemCost: 800
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 0
+    minimum: 0.05
+    maximum: 0.07
+    isPercent: 1
+  randomisableStats:
+  - stat: 10
+    minimum: 0.04
+    maximum: 0.06
+    isPercent: 0
+  minimumDropLevel: 1
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

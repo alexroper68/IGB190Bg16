@@ -13,18 +13,34 @@ MonoBehaviour:
   m_Name: Obsidic Amulet
   m_EditorClassIdentifier: 
   itemName: Obsidic Amulet
-  itemDescription: 
+  itemDescription: Reduces ability cooldowns.
   itemTag: 
   itemFlavourText: A shard of obsibian, empowered with dark souls.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 371f7aca98ca60744bebba125976b879, type: 3}
   itemType: 1
   itemRarity: 1
-  itemCost: 0
+  itemCost: 2400
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 7
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  randomisableStats:
+  - stat: 8
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  - stat: 5
+    minimum: 0.1
+    maximum: 0.12
+    isPercent: 1
+  - stat: 9
+    minimum: 0.15
+    maximum: 0.2
+    isPercent: 1
+  minimumDropLevel: 12
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

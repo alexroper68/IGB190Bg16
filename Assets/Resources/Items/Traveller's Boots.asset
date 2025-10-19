@@ -13,18 +13,26 @@ MonoBehaviour:
   m_Name: Traveller's Boots
   m_EditorClassIdentifier: 
   itemName: Traveller's Boots
-  itemDescription: 
+  itemDescription: Endurance based boots best for speed.
   itemTag: 
   itemFlavourText: Torn, ripped, and old, but have never failed a single journey.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: cf4b1a418a1a64e4a803c2cefdb94a2b, type: 3}
   itemType: 4
   itemRarity: 0
-  itemCost: 0
+  itemCost: 800
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 6
+    minimum: 0.05
+    maximum: 0.07
+    isPercent: 1
+  randomisableStats:
+  - stat: 4
+    minimum: 0.05
+    maximum: 0.07
+    isPercent: 1
+  minimumDropLevel: 10
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

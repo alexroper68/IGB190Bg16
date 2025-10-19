@@ -13,18 +13,34 @@ MonoBehaviour:
   m_Name: Wardens Vest
   m_EditorClassIdentifier: 
   itemName: Wardens Vest
-  itemDescription: 
+  itemDescription: Strong protective armor with moderate utility bonuses.
   itemTag: 
   itemFlavourText: An ancient vest once worn by the warden troop army.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: b9ff5a91fb0b29f4d86d7000bf7a0b7c, type: 3}
   itemType: 3
   itemRarity: 1
-  itemCost: 0
+  itemCost: 2900
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 1
+    minimum: 0.12
+    maximum: 0.15
+    isPercent: 1
+  randomisableStats:
+  - stat: 4
+    minimum: 0.1
+    maximum: 0.14
+    isPercent: 1
+  - stat: 0
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  - stat: 7
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  minimumDropLevel: 16
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

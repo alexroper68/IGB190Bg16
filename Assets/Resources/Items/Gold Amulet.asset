@@ -13,18 +13,26 @@ MonoBehaviour:
   m_Name: Gold Amulet
   m_EditorClassIdentifier: 
   itemName: Gold Amulet
-  itemDescription: 
+  itemDescription: Reduces cooldowns slightly.
   itemTag: 
   itemFlavourText: An amulet that's worth more than it looks.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 490b8ea16029aca409a0ab5c570bb96e, type: 3}
   itemType: 1
   itemRarity: 0
-  itemCost: 0
+  itemCost: 1100
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 7
+    minimum: 0.05
+    maximum: 0.07
+    isPercent: 1
+  randomisableStats:
+  - stat: 8
+    minimum: 0.05
+    maximum: 0.07
+    isPercent: 1
+  minimumDropLevel: 2
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

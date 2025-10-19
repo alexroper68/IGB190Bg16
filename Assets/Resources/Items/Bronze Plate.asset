@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bronze Plate
   m_EditorClassIdentifier: 
   itemName: Bronze Plate
-  itemDescription: 
+  itemDescription: A strudy piece of armor that offers moderate protection.
   itemTag: 
   itemFlavourText: Shiny and stable, worn through many battles and protected many
     souls.
@@ -21,11 +21,19 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: f525fc04d7de01647a20ff599129b2f1, type: 3}
   itemType: 3
   itemRarity: 0
-  itemCost: 0
+  itemCost: 1000
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 1
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  randomisableStats:
+  - stat: 4
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  minimumDropLevel: 2
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

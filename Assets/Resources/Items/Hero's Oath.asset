@@ -13,18 +13,38 @@ MonoBehaviour:
   m_Name: Hero's Oath
   m_EditorClassIdentifier: 
   itemName: Hero's Oath
-  itemDescription: 
+  itemDescription: A balanced weapon used for offense attacks.
   itemTag: 
   itemFlavourText: A sword sworn with legacy and sealed with glory.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 33ebab032307d64478a8023413e8a718, type: 3}
   itemType: 2
   itemRarity: 2
-  itemCost: 0
+  itemCost: 3200
   randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  guaranteedStats:
+  - stat: 0
+    minimum: 0.14
+    maximum: 0.17
+    isPercent: 1
+  - stat: 10
+    minimum: 0.09
+    maximum: 0.11
+    isPercent: 0
+  randomisableStats:
+  - stat: 3
+    minimum: 0.1
+    maximum: 0.12
+    isPercent: 1
+  - stat: 7
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  - stat: 11
+    minimum: 0.35
+    maximum: 0.45
+    isPercent: 0
+  minimumDropLevel: 10
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
