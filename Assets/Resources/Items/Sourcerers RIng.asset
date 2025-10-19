@@ -10,36 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Champion's Long Sword
+  m_Name: Sourcerers RIng
   m_EditorClassIdentifier: 
-  itemName: Champion's Long Sword
-  itemDescription: A well rounded weapon for those who prefer melee attacks.
+  itemName: Sourcerers RIng
+  itemDescription: Reduces spell cooldowns, as well as boosting recovery for resources.
   itemTag: 
-  itemFlavourText: A champion's best companion in battle, most being named Excalibur.
+  itemFlavourText: Forged in secret by the king that ruled all, it hums with ancient
+    power, engulfing those who dare touch it..
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 5ad9fb827823973498b6278fd53029ed, type: 3}
-  itemType: 2
-  itemRarity: 1
-  itemCost: 2800
+  itemIcon: {fileID: 21300000, guid: 868c7767c75364f408d3ccad1813a095, type: 3}
+  itemType: 0
+  itemRarity: 2
+  itemCost: 3500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 0
-    minimum: 0.09
-    maximum: 0.11
+  - stat: 7
+    minimum: 0.1
+    maximum: 0.12
+    isPercent: 1
+  - stat: 8
+    minimum: 0.12
+    maximum: 0.15
     isPercent: 1
   randomisableStats:
-  - stat: 3
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 1
-  - stat: 11
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
   - stat: 10
-    minimum: 0.25
-    maximum: 0.3
+    minimum: 0.08
+    maximum: 0.1
     isPercent: 0
+  - stat: 5
+    minimum: 0.12
+    maximum: 0.16
+    isPercent: 1
   minimumDropLevel: 15
   canPurchaseInShop: 1
   canDropOffMonster: 1
@@ -47,17 +48,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1752318606
+      scriptUID: 1385633336
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474246
+      - rid: 6394421181470474282
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 584578582
+      scriptUID: 1062299730
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474247
+      - rid: 6394421181470474283
       conditionNodes: []
       actionNodes: []
   references:
@@ -65,7 +66,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6394421181470474246
+    - rid: 6394421181470474282
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -86,7 +87,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6394421181470474247
+    - rid: 6394421181470474283
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

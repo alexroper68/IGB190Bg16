@@ -10,54 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Champion's Long Sword
+  m_Name: Steel Plate
   m_EditorClassIdentifier: 
-  itemName: Champion's Long Sword
-  itemDescription: A well rounded weapon for those who prefer melee attacks.
+  itemName: Steel Plate
+  itemDescription: A stronger version of the steel half-plate, provides heavy defense.
   itemTag: 
-  itemFlavourText: A champion's best companion in battle, most being named Excalibur.
+  itemFlavourText: Although dented and dull, this piece of armor will protect you
+    from harm.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 5ad9fb827823973498b6278fd53029ed, type: 3}
-  itemType: 2
-  itemRarity: 1
-  itemCost: 2800
+  itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
+  itemType: 3
+  itemRarity: 0
+  itemCost: 1600
   randomStatCount: 0
   guaranteedStats:
-  - stat: 0
-    minimum: 0.09
-    maximum: 0.11
+  - stat: 1
+    minimum: 0.12
+    maximum: 0.14
     isPercent: 1
   randomisableStats:
-  - stat: 3
-    minimum: 0.06
-    maximum: 0.08
+  - stat: 0
+    minimum: 0.04
+    maximum: 0.05
     isPercent: 1
-  - stat: 11
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
-  - stat: 10
-    minimum: 0.25
-    maximum: 0.3
-    isPercent: 0
-  minimumDropLevel: 15
+  minimumDropLevel: 6
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1752318606
+      scriptUID: 626246590
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474246
+      - rid: 6394421181470474262
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 584578582
+      scriptUID: 510505174
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474247
+      - rid: 6394421181470474263
       conditionNodes: []
       actionNodes: []
   references:
@@ -65,7 +58,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6394421181470474246
+    - rid: 6394421181470474262
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -86,7 +79,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6394421181470474247
+    - rid: 6394421181470474263
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

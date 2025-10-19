@@ -10,54 +10,56 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Champion's Long Sword
+  m_Name: Scout's Armor
   m_EditorClassIdentifier: 
-  itemName: Champion's Long Sword
-  itemDescription: A well rounded weapon for those who prefer melee attacks.
+  itemName: Scout's Armor
+  itemDescription: A light armor set that offers slight increase in speed and mild
+    damage protection.
   itemTag: 
-  itemFlavourText: A champion's best companion in battle, most being named Excalibur.
+  itemFlavourText: Light but sturdy, perfect for those who like to be light on their
+    feet.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 5ad9fb827823973498b6278fd53029ed, type: 3}
-  itemType: 2
+  itemIcon: {fileID: 21300000, guid: f525fc04d7de01647a20ff599129b2f1, type: 3}
+  itemType: 3
   itemRarity: 1
-  itemCost: 2800
+  itemCost: 2500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 0
-    minimum: 0.09
-    maximum: 0.11
+  - stat: 6
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 1
   randomisableStats:
-  - stat: 3
+  - stat: 7
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
-  - stat: 11
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
-  - stat: 10
-    minimum: 0.25
-    maximum: 0.3
-    isPercent: 0
-  minimumDropLevel: 15
+  - stat: 1
+    minimum: 0.1
+    maximum: 0.12
+    isPercent: 1
+  - stat: 4
+    minimum: 0.1
+    maximum: 0.12
+    isPercent: 1
+  minimumDropLevel: 12
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1752318606
+      scriptUID: 2015147523
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474246
+      - rid: 6394421181470474264
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 584578582
+      scriptUID: 2124472202
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474247
+      - rid: 6394421181470474265
       conditionNodes: []
       actionNodes: []
   references:
@@ -65,7 +67,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6394421181470474246
+    - rid: 6394421181470474264
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -86,7 +88,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6394421181470474247
+    - rid: 6394421181470474265
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

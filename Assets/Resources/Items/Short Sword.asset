@@ -10,54 +10,46 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Champion's Long Sword
+  m_Name: Short Sword
   m_EditorClassIdentifier: 
-  itemName: Champion's Long Sword
-  itemDescription: A well rounded weapon for those who prefer melee attacks.
+  itemName: Short Sword
+  itemDescription: A fast attack weapon that increases mobility.
   itemTag: 
-  itemFlavourText: A champion's best companion in battle, most being named Excalibur.
+  itemFlavourText: A shorter version of the long sword, it deems quick, and sharp.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 5ad9fb827823973498b6278fd53029ed, type: 3}
+  itemIcon: {fileID: 21300000, guid: 43d4e2cf97dee3142b1cb5dd30bf4b56, type: 3}
   itemType: 2
-  itemRarity: 1
-  itemCost: 2800
+  itemRarity: 0
+  itemCost: 900
   randomStatCount: 0
   guaranteedStats:
-  - stat: 0
-    minimum: 0.09
-    maximum: 0.11
+  - stat: 3
+    minimum: 0.05
+    maximum: 0.07
     isPercent: 1
   randomisableStats:
-  - stat: 3
-    minimum: 0.06
-    maximum: 0.08
+  - stat: 0
+    minimum: 0.04
+    maximum: 0.06
     isPercent: 1
-  - stat: 11
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
-  - stat: 10
-    minimum: 0.25
-    maximum: 0.3
-    isPercent: 0
-  minimumDropLevel: 15
+  minimumDropLevel: 1
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1752318606
+      scriptUID: 1297166556
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474246
+      - rid: 6394421181470474256
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 584578582
+      scriptUID: 1629461439
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474247
+      - rid: 6394421181470474257
       conditionNodes: []
       actionNodes: []
   references:
@@ -65,7 +57,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6394421181470474246
+    - rid: 6394421181470474256
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -86,7 +78,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6394421181470474247
+    - rid: 6394421181470474257
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

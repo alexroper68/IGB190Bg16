@@ -10,46 +10,54 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: bright armor
+  m_Name: Wardens Vest
   m_EditorClassIdentifier: 
-  itemName: bright armor
-  itemDescription: 
+  itemName: Wardens Vest
+  itemDescription: Strong protective armor with moderate utility bonuses.
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: An ancient vest once worn by the warden troop army.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: b9ff5a91fb0b29f4d86d7000bf7a0b7c, type: 3}
   itemType: 3
   itemRarity: 1
-  itemCost: 1500
+  itemCost: 2900
   randomStatCount: 0
   guaranteedStats:
   - stat: 1
-    minimum: 10
-    maximum: 10
-    isPercent: 0
+    minimum: 0.12
+    maximum: 0.15
+    isPercent: 1
+  randomisableStats:
   - stat: 4
-    minimum: 50
-    maximum: 50
-    isPercent: 0
-  randomisableStats: []
-  minimumDropLevel: 0
+    minimum: 0.1
+    maximum: 0.14
+    isPercent: 1
+  - stat: 0
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  - stat: 7
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  minimumDropLevel: 16
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1984071171
+      scriptUID: 737954507
       hasWait: 0
       eventNodes:
-      - rid: 4304569715425804290
+      - rid: 6394421181470474268
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1886900801
+      scriptUID: 1398316193
       hasWait: 0
       eventNodes:
-      - rid: 4304569715425804291
+      - rid: 6394421181470474269
       conditionNodes: []
       actionNodes: []
   references:
@@ -57,7 +65,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569715425804290
+    - rid: 6394421181470474268
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -78,7 +86,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569715425804291
+    - rid: 6394421181470474269
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

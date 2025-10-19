@@ -10,38 +10,58 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: revitalising band
+  m_Name: Terran Strider
   m_EditorClassIdentifier: 
-  itemName: revitalising band
-  itemDescription: 
+  itemName: Terran Strider
+  itemDescription: Greatly increases speed.
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: A quick and whispy pair of boots.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 50f02582f340d894492baa25ce0f47bb, type: 3}
-  itemType: 0
-  itemRarity: 2
+  itemIcon: {fileID: 21300000, guid: 8d34117aa619ac644af2b55ee113eee0, type: 3}
+  itemType: 4
+  itemRarity: 1
   itemCost: 3000
-  randomStatCount: 1
-  guaranteedStats: []
-  randomisableStats: []
-  minimumDropLevel: 0
+  randomStatCount: 0
+  guaranteedStats:
+  - stat: 6
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  - stat: 7
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  randomisableStats:
+  - stat: 3
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 4
+    minimum: 0.12
+    maximum: 0.15
+    isPercent: 1
+  - stat: 8
+    minimum: 0.08
+    maximum: 0.1
+    isPercent: 1
+  minimumDropLevel: 14
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 750222624
+      scriptUID: 909763325
       hasWait: 0
       eventNodes:
-      - rid: 4304570032390406320
+      - rid: 6394421181470474286
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 916120952
+      scriptUID: 43917206
       hasWait: 0
       eventNodes:
-      - rid: 4304570032390406321
+      - rid: 6394421181470474287
       conditionNodes: []
       actionNodes: []
   references:
@@ -49,7 +69,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304570032390406320
+    - rid: 6394421181470474286
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -70,7 +90,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304570032390406321
+    - rid: 6394421181470474287
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
