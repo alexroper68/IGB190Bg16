@@ -19744,7 +19744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   empoweredMonsters: 1
-  spawnDensity: 2
+  spawnDensity: 1
   maximumSpawnLevel: 1
 --- !u!65 &869263167
 BoxCollider:
@@ -26425,7 +26425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22258bfc65daabc4a8797c8d6300c7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empoweredMonsters: 2
+  empoweredMonsters: 1
   spawnDensity: 2
   maximumSpawnLevel: 1
 --- !u!65 &1118058753
@@ -26549,8 +26549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22258bfc65daabc4a8797c8d6300c7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empoweredMonsters: 1
-  spawnDensity: 1
+  empoweredMonsters: 2
+  spawnDensity: 2
   maximumSpawnLevel: 1
 --- !u!65 &1120868215
 BoxCollider:
@@ -38837,7 +38837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22258bfc65daabc4a8797c8d6300c7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empoweredMonsters: 2
+  empoweredMonsters: 1
   spawnDensity: 2
   maximumSpawnLevel: 1
 --- !u!65 &1492554076
@@ -48277,7 +48277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   empoweredMonsters: 2
-  spawnDensity: 2
+  spawnDensity: 3
   maximumSpawnLevel: 1
 --- !u!65 &1972563667
 BoxCollider:
@@ -49601,7 +49601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22258bfc65daabc4a8797c8d6300c7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empoweredMonsters: 2
+  empoweredMonsters: 1
   spawnDensity: 2
   maximumSpawnLevel: 1
 --- !u!65 &2021547677

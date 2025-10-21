@@ -20,7 +20,7 @@ MonoBehaviour:
   targetMode: 3
   abilityDescription: blast fire forth, dealing 80% attack damage to all units in
     front of the caster
-  abilityAnimation: Magic Channel
+  abilityAnimation: Two Hand Slash
   range: 2
   castTime: 0
   abilityCooldown: 0.1
@@ -238,7 +238,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
+        value: 1.5
     - rid: 4304569716078542857
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
