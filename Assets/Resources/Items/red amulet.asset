@@ -10,58 +10,46 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet of Blood
+  m_Name: red amulet
   m_EditorClassIdentifier: 
-  itemName: Amulet of Blood
-  itemDescription: Boosts attack power and speed.
+  itemName: red amulet
+  itemDescription: 
   itemTag: 
-  itemFlavourText: It's still warm to the touch.. beating to the rhythm of your heart.
+  itemFlavourText: 
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: ec888f7f279932d479dd9d2f3047a4ba, type: 3}
   itemType: 1
-  itemRarity: 2
-  itemCost: 4000
+  itemRarity: 1
+  itemCost: 1500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 0
-    minimum: 0.14
-    maximum: 0.18
-    isPercent: 1
-  - stat: 4
-    minimum: 0.15
-    maximum: 0.2
-    isPercent: 1
-  randomisableStats:
-  - stat: 0
-    minimum: 0.35
-    maximum: 0.5
-    isPercent: 1
   - stat: 3
     minimum: 0.1
-    maximum: 0.12
+    maximum: 0.1
     isPercent: 1
   - stat: 8
     minimum: 0.1
-    maximum: 0.12
+    maximum: 0.1
     isPercent: 1
-  minimumDropLevel: 20
+  randomisableStats: []
+  minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 494373885
+      scriptUID: 328395206
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474294
+      - rid: 4304569634912731136
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1355417083
+      scriptUID: 389587965
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474295
+      - rid: 4304569634912731137
       conditionNodes: []
       actionNodes: []
   references:
@@ -69,7 +57,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6394421181470474294
+    - rid: 4304569634912731136
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -90,7 +78,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6394421181470474295
+    - rid: 4304569634912731137
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
