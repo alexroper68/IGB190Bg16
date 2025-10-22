@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hero's Treasure
   m_EditorClassIdentifier: 
   itemName: Hero's Treasure
-  itemDescription: Reduces abillity costs and improves mana regeneration.
+  itemDescription: Reduces abillity costs
   itemTag: 
   itemFlavourText: 'A treasure strong enough to deflect the strongest of blows. '
   classRequirement: 
@@ -23,28 +23,16 @@ MonoBehaviour:
   itemCost: 3000
   randomStatCount: 0
   guaranteedStats:
-  - stat: 9
-    minimum: 0.24
-    maximum: 0.3
-    isPercent: 1
+  - stat: 1
+    minimum: 10
+    maximum: 10
+    isPercent: 0
   - stat: 8
-    minimum: 0.12
-    maximum: 0.15
+    minimum: 0.2
+    maximum: 0.2
     isPercent: 1
-  randomisableStats:
-  - stat: 7
-    minimum: 0.08
-    maximum: 0.1
-    isPercent: 1
-  - stat: 5
-    minimum: 0.14
-    maximum: 0.18
-    isPercent: 1
-  - stat: 6
-    minimum: 0.08
-    maximum: 0.1
-    isPercent: 1
-  minimumDropLevel: 16
+  randomisableStats: []
+  minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

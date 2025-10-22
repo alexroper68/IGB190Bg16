@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: revitalising band
   m_EditorClassIdentifier: 
   itemName: revitalising band
-  itemDescription: 
+  itemDescription: absorbs energy from health globes to power your attacks
   itemTag: 
   itemFlavourText: 
   classRequirement: 
@@ -21,9 +21,21 @@ MonoBehaviour:
   itemType: 0
   itemRarity: 2
   itemCost: 3000
-  randomStatCount: 1
+  randomStatCount: 2
   guaranteedStats: []
-  randomisableStats: []
+  randomisableStats:
+  - stat: 10
+    minimum: 0.05
+    maximum: 0.05
+    isPercent: 0
+  - stat: 5
+    minimum: 50
+    maximum: 50
+    isPercent: 0
+  - stat: 5
+    minimum: 0.2
+    maximum: 0.2
+    isPercent: 1
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
@@ -44,11 +56,106 @@ MonoBehaviour:
       - rid: 4304570032390406321
       conditionNodes: []
       actionNodes: []
+    - scriptName: regen on pickup
+      scriptUID: 1695809206
+      hasWait: 0
+      eventNodes:
+      - rid: 2305487265674821636
+      conditionNodes: []
+      actionNodes:
+      - rid: 2305487265674821637
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 2305487265674821636
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnPickupHealth
+        functionDescription: Player/Player picks up a health globe
+        functionDynamicDescription: 'When the player picks up a health globe (Presets:
+          <color=yellow>Health Restored</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Pickup
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Health Restored
+    - rid: 2305487265674821637
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddResource
+        functionDescription: Unit/Add Resource
+        functionDynamicDescription: Add $ resource to $
+        functionEvaluators:
+        - rid: 2305487265674821638
+        - rid: 2305487265674821639
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2305487265674821638
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305487265674821637
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 100
+    - rid: 2305487265674821639
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2305487265674821637
+        parentNodeID: 1
+        indent: 0
+        presetName: Ability Owner
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
     - rid: 4304570032390406320
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
