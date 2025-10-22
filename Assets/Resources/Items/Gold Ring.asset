@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gold Ring
   m_EditorClassIdentifier: 
   itemName: Gold Ring
-  itemDescription: 'TODO: Someone still needs to make these items!'
+  itemDescription: an artefact which concentrates power.
   itemTag: 
   itemFlavourText: 
   classRequirement: 
@@ -49,8 +49,8 @@ MonoBehaviour:
     maximum: 0.3
     isPercent: 1
   - stat: 5
-    minimum: 0.3
-    maximum: 0.4
+    minimum: 0.2
+    maximum: 0.2
     isPercent: 1
   - stat: 1
     minimum: 0.1
