@@ -20,7 +20,7 @@ MonoBehaviour:
   targetMode: 1
   abilityDescription: blood rains from the sky towards the target location, dealing
     320% attack damage over 8 seconds and slowing enemies hit by 70%.
-  abilityAnimation: One Hand Slash
+  abilityAnimation: Magic Area Attack
   range: 15
   castTime: 0.1
   abilityCooldown: 15
