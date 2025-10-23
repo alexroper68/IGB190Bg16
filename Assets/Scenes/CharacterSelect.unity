@@ -25977,14 +25977,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Write your own  custom description here!
+  m_text: 'the kinetic is a monk dedicated to mastering the flow of the four elements
+    of reality. using them, they incapacitate and destroy their enemies.
 
 
     <color=#88FF88>Strength</color>:
-    ???
+    crowd control
 
 
-    <color=#FF8888>Weakness</color>: ???'
+    <color=#FF8888>Weakness</color>: low raw power'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
   m_sharedMaterial: {fileID: -5745236825215515014, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}

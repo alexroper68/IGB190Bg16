@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Steel Plate
   m_EditorClassIdentifier: 
   itemName: Steel Plate
-  itemDescription: A stronger version of the steel half-plate, provides heavy defense.
+  itemDescription: 
   itemTag: 
   itemFlavourText: Although dented and dull, this piece of armor will protect you
     from harm.

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Mistwalkers
   m_EditorClassIdentifier: 
   itemName: Mistwalkers
-  itemDescription: 
+  itemDescription: as you move, your sillhouette blurs and shifts, making you untargetable.
+    you take less damage when moving.
   itemTag: 
   itemFlavourText: 
   classRequirement: 

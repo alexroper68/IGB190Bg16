@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mythic Plate
   m_EditorClassIdentifier: 
   itemName: Mythic Plate
-  itemDescription: A strong piece of armor that maximises defense.
+  itemDescription: 
   itemTag: 
   itemFlavourText: Etched with glory and crafted with ancient runes, it is as strong
     as the caves it came from.

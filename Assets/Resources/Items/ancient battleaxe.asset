@@ -10,30 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Lord's Cloak
+  m_Name: ancient battleaxe
   m_EditorClassIdentifier: 
-  itemName: Lord's Cloak
-  itemDescription: 
+  itemName: ancient battleaxe
+  itemDescription: A powerful weapon, strong only when it hits firm
   itemTag: 
-  itemFlavourText: A cloak that whispers ancient oaths to those who wear it.
+  itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 46b653297cf26784db9cdeb0a0cf6e6c, type: 3}
-  itemType: 3
+  itemIcon: {fileID: 21300000, guid: 7d2c5bf95d4481241b61ab4d3196f11c, type: 3}
+  itemType: 2
   itemRarity: 2
   itemCost: 3000
   randomStatCount: 0
   guaranteedStats:
-  - stat: 6
-    minimum: 0.15
-    maximum: 0.15
-    isPercent: 1
-  - stat: 4
-    minimum: 50
-    maximum: 50
-    isPercent: 0
-  - stat: 0
-    minimum: 10
-    maximum: 10
+  - stat: 11
+    minimum: 3
+    maximum: 3
     isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
@@ -43,17 +35,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1171631557
+      scriptUID: 1026800871
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474266
+      - rid: 2305487268801937484
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 919424701
+      scriptUID: 26636368
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474267
+      - rid: 2305487268801937485
       conditionNodes: []
       actionNodes: []
   references:
@@ -61,7 +53,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6394421181470474266
+    - rid: 2305487268801937484
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -82,7 +74,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6394421181470474267
+    - rid: 2305487268801937485
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

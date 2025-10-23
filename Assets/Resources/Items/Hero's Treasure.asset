@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hero's Treasure
   m_EditorClassIdentifier: 
   itemName: Hero's Treasure
-  itemDescription: Reduces abillity costs
+  itemDescription: 
   itemTag: 
   itemFlavourText: 'A treasure strong enough to deflect the strongest of blows. '
   classRequirement: 
