@@ -25977,14 +25977,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Write your own  custom description here!
-
-
-    <color=#88FF88>Strength</color>:
-    ???
-
-
-    <color=#FF8888>Weakness</color>: ???'
+  m_text: "Harnessing the flow of elemental energy, the Kinetic turns momentum into
+    mastery \u2014 striking with precision, speed, and control. In constant motion,
+    they weave between foes, chaining abilities that ignite, stun, and devastate
+    in rhythmic succession.\n\n<color=#88FF88>Strength</color>: Exceptional mobility
+    and crowd control through chaining stuns and AoE attacks.\n\n<color=#FF8888>Weakness</color>:
+    Lower base damage and durability \u2014 requires timing and positioning to survive."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
   m_sharedMaterial: {fileID: -5745236825215515014, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
