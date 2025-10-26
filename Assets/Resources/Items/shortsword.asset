@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: shortsword
+  m_Name: Shortsword
   m_EditorClassIdentifier: 
-  itemName: shortsword
+  itemName: Shortsword
   itemDescription: 
   itemTag: 
   itemFlavourText: a shorter version of the longsword.  doesn't require as much strength

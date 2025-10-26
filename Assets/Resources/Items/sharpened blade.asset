@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: sharpened blade
+  m_Name: Sharpened blade
   m_EditorClassIdentifier: 
-  itemName: sharpened blade
+  itemName: Sharpened blade
   itemDescription: 
   itemTag: 
   itemFlavourText: this is a specialised weapon forged with grate care to give it
