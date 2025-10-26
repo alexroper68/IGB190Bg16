@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Steel Half-Plate
   m_EditorClassIdentifier: 
   itemName: Steel Half-Plate
-  itemDescription: An armor plate that balaces weight and defense.
+  itemDescription: 
   itemTag: 
   itemFlavourText: Half the weight and strength of a steel plate, but would still
     protect you more than cloth would.
@@ -25,8 +25,8 @@ MonoBehaviour:
   randomStatCount: 0
   guaranteedStats:
   - stat: 1
-    minimum: 0.09
-    maximum: 0.09
+    minimum: 0.15
+    maximum: 0.14
     isPercent: 1
   - stat: 1
     minimum: 4

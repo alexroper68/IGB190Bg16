@@ -15,7 +15,9 @@ MonoBehaviour:
   itemName: revitalising band
   itemDescription: absorbs energy from health globes to power your attacks
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: this band of power drains ambient energy. even if it is normally
+    too weak to grant fruit, it can occasionally be very worthwhile when the energy
+    is concentrated.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 50f02582f340d894492baa25ce0f47bb, type: 3}
   itemType: 0

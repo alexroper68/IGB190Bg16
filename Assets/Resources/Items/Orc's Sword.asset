@@ -33,7 +33,7 @@ MonoBehaviour:
     isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
-  canPurchaseInShop: 0
+  canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:

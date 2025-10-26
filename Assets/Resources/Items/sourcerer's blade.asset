@@ -17,7 +17,8 @@ MonoBehaviour:
     potion
   itemTag: 
   itemFlavourText: a potent weapon forged by a great sourcerer king that can lay
-    waste to even siege engines with ease. tastes sour.
+    waste to even siege engines with ease. tastes sour. wait why are you tasitng
+    it?
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 5ad9fb827823973498b6278fd53029ed, type: 3}
   itemType: 2

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Bronze Battle Axe
   m_EditorClassIdentifier: 
   itemName: Bronze Battle Axe
-  itemDescription: A powerful weapon, strong only when it hits firm
+  itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: A powerful weapon, strong only when it hits firm.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: f898d9bdca539c54798624c56f9aa8f4, type: 3}
   itemType: 2
