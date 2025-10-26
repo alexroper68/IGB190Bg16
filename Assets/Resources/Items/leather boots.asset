@@ -10,27 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
+<<<<<<<< HEAD:Assets/Resources/Items/leather boots.asset
   m_Name: leather boots
   m_EditorClassIdentifier: 
   itemName: leather boots
   itemDescription: 
+========
+  m_Name: Gold Amulet
+  m_EditorClassIdentifier: 
+  itemName: Gold Amulet
+  itemDescription: Reduces ability costs slightly.
+>>>>>>>> cf2c691b75ec2db09b5d0244b2e797217c798e95:Assets/Resources/Items/Gold Amulet.asset
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: An amulet that's worth more than it looks.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 87a6ace052badc94890297eb1f920c27, type: 3}
-  itemType: 4
+  itemIcon: {fileID: 21300000, guid: 490b8ea16029aca409a0ab5c570bb96e, type: 3}
+  itemType: 1
   itemRarity: 0
   itemCost: 500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 6
-    minimum: 0.12
-    maximum: 0.12
+  - stat: 8
+    minimum: 0.1
+    maximum: 0.1
     isPercent: 1
-  - stat: 1
-    minimum: 2
-    maximum: 2
-    isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
@@ -39,17 +42,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 810309599
+      scriptUID: 242063374
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722500
+      - rid: 4304569558383722496
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1015438188
+      scriptUID: 128023782
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722501
+      - rid: 4304569558383722497
       conditionNodes: []
       actionNodes: []
   references:
@@ -57,7 +60,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569558383722500
+    - rid: 4304569558383722496
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -78,7 +81,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569558383722501
+    - rid: 4304569558383722497
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
