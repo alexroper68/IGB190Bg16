@@ -10,17 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-<<<<<<<< HEAD:Assets/Resources/Items/leather boots.asset
-  m_Name: leather boots
-  m_EditorClassIdentifier: 
-  itemName: leather boots
-  itemDescription: 
-========
   m_Name: Gold Amulet
   m_EditorClassIdentifier: 
   itemName: Gold Amulet
   itemDescription: Reduces ability costs slightly.
->>>>>>>> cf2c691b75ec2db09b5d0244b2e797217c798e95:Assets/Resources/Items/Gold Amulet.asset
   itemTag: 
   itemFlavourText: An amulet that's worth more than it looks.
   classRequirement: 
