@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Gold Amulet
+  m_Name: Armor
   m_EditorClassIdentifier: 
-  itemName: Gold Amulet
-  itemDescription: Reduces ability costs slightly.
+  itemName: Armor
+  itemDescription: 
   itemTag: 
-  itemFlavourText: An amulet that's worth more than it looks.
+  itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 490b8ea16029aca409a0ab5c570bb96e, type: 3}
-  itemType: 1
+  itemIcon: {fileID: 21300000, guid: f525fc04d7de01647a20ff599129b2f1, type: 3}
+  itemType: 3
   itemRarity: 0
   itemCost: 500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 8
-    minimum: 0.1
-    maximum: 0.1
-    isPercent: 1
+  - stat: 1
+    minimum: 10
+    maximum: 10
+    isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
@@ -35,17 +35,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 242063374
+      scriptUID: 2055215292
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722496
+      - rid: 4304569558383722498
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 128023782
+      scriptUID: 1375930473
       hasWait: 0
       eventNodes:
-      - rid: 4304569558383722497
+      - rid: 4304569558383722499
       conditionNodes: []
       actionNodes: []
   references:
@@ -53,7 +53,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569558383722496
+    - rid: 4304569558383722498
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -74,7 +74,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569558383722497
+    - rid: 4304569558383722499
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Ruby Ring
   m_EditorClassIdentifier: 
   itemName: Ruby Ring
-  itemDescription: A ring that grants small advantages.
+  itemDescription: a ring that changes many things, but subtly each.
   itemTag: 
-  itemFlavourText: A token of luck, glowing warm and radiant.
+  itemFlavourText: A token of luck, glowing warm and radient.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: a8bc19c7daadb6044b071d234a1d62a3, type: 3}
   itemType: 0
@@ -32,6 +32,10 @@ MonoBehaviour:
     minimum: 2
     maximum: 2
     isPercent: 0
+  - stat: 0
+    minimum: 0.03
+    maximum: 0.03
+    isPercent: 1
   - stat: 1
     minimum: 2
     maximum: 2
@@ -44,13 +48,25 @@ MonoBehaviour:
     minimum: 10
     maximum: 10
     isPercent: 0
+  - stat: 4
+    minimum: 0.04
+    maximum: 0.04
+    isPercent: 1
+  - stat: 5
+    minimum: 10
+    maximum: 10
+    isPercent: 0
+  - stat: 5
+    minimum: 0.04
+    maximum: 0.04
+    isPercent: 1
   - stat: 8
     minimum: 0.02
     maximum: 0.02
     isPercent: 1
-  - stat: 5
-    minimum: 3
-    maximum: 3
+  - stat: 11
+    minimum: 0.2
+    maximum: 0.2
     isPercent: 0
   minimumDropLevel: 0
   canPurchaseInShop: 1
