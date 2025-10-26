@@ -27,11 +27,7 @@ MonoBehaviour:
     minimum: 0.15
     maximum: 0.15
     isPercent: 1
-  randomisableStats:
-  - stat: 10
-    minimum: 0.04
-    maximum: 0.05
-    isPercent: 0
+  randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1

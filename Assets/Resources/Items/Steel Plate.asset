@@ -20,37 +20,33 @@ MonoBehaviour:
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
   itemType: 3
-  itemRarity: 0
-  itemCost: 800
+  itemRarity: 1
+  itemCost: 1500
   randomStatCount: 0
   guaranteedStats:
   - stat: 1
-    minimum: 8
-    maximum: 8
+    minimum: 20
+    maximum: 20
     isPercent: 0
-  - stat: 1
-    minimum: 0.15
-    maximum: 0.15
-    isPercent: 1
   randomisableStats: []
-  minimumDropLevel: 0
+  minimumDropLevel: 6
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1047703595
+      scriptUID: 626246590
       hasWait: 0
       eventNodes:
-      - rid: 4304569468181020672
+      - rid: 6394421181470474262
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 930453683
+      scriptUID: 510505174
       hasWait: 0
       eventNodes:
-      - rid: 4304569468181020673
+      - rid: 6394421181470474263
       conditionNodes: []
       actionNodes: []
   references:
@@ -58,7 +54,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569468181020672
+    - rid: 6394421181470474262
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -79,7 +75,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569468181020673
+    - rid: 6394421181470474263
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

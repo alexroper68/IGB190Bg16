@@ -22,7 +22,7 @@ MonoBehaviour:
   itemType: 2
   itemRarity: 2
   itemCost: 3000
-  randomStatCount: 1
+  randomStatCount: 0
   guaranteedStats:
   - stat: 3
     minimum: 0.12
@@ -32,11 +32,7 @@ MonoBehaviour:
     minimum: 0.27
     maximum: 0.27
     isPercent: 1
-  randomisableStats:
-  - stat: 10
-    minimum: 0.15
-    maximum: 0.15
-    isPercent: 0
+  randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1

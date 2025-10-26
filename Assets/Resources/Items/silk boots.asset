@@ -10,34 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Echoed Battle Axe
+  m_Name: silk boots
   m_EditorClassIdentifier: 
-  itemName: Echoed Battle Axe
-  itemDescription: A slow weapon that excels in burst combat.
+  itemName: silk boots
+  itemDescription: 
   itemTag: 
-  itemFlavourText: 'A rare battleaxe forged with the sharpest of blades.
-
-'
+  itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: f898d9bdca539c54798624c56f9aa8f4, type: 3}
-  itemType: 2
+  itemIcon: {fileID: 21300000, guid: a49193b555b34a046a80294f41fb8bf9, type: 3}
+  itemType: 4
   itemRarity: 1
-  itemCost: 2000
+  itemCost: 1500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 3
-    minimum: 0.1
-    maximum: 0.1
+  - stat: 6
+    minimum: 0.15
+    maximum: 0.15
     isPercent: 1
-  - stat: 0
-    minimum: 0.3
-    maximum: 0.3
-    isPercent: 1
-  randomisableStats:
   - stat: 10
-    minimum: 0.1
-    maximum: 0.2
+    minimum: 0.05
+    maximum: 0.05
     isPercent: 0
+  randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
@@ -45,17 +39,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 328395206
+      scriptUID: 2136755643
       hasWait: 0
       eventNodes:
-      - rid: 4304569634912731136
+      - rid: 4304569715425804292
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 389587965
+      scriptUID: 1183883173
       hasWait: 0
       eventNodes:
-      - rid: 4304569634912731137
+      - rid: 4304569715425804293
       conditionNodes: []
       actionNodes: []
   references:
@@ -63,7 +57,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569634912731136
+    - rid: 4304569715425804292
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -84,7 +78,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569634912731137
+    - rid: 4304569715425804293
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

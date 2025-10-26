@@ -10,25 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet of Blood
+  m_Name: revitalising band
   m_EditorClassIdentifier: 
-  itemName: Amulet of Blood
-  itemDescription: 'Boosts attack power and speed.
-
-'
+  itemName: revitalising band
+  itemDescription: absorbs energy from health globes to power your attacks
   itemTag: 
-  itemFlavourText: It's still warm to the touch.. beating to the rhythm of your heart.
+  itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: ec888f7f279932d479dd9d2f3047a4ba, type: 3}
-  itemType: 1
+  itemIcon: {fileID: 21300000, guid: 50f02582f340d894492baa25ce0f47bb, type: 3}
+  itemType: 0
   itemRarity: 2
-  itemCost: 4000
-  randomStatCount: 3
-  guaranteedStats:
-  - stat: 3
-    minimum: 0.15
-    maximum: 0.2
-    isPercent: 1
+  itemCost: 3000
+  randomStatCount: 2
+  guaranteedStats: []
   randomisableStats:
   - stat: 10
     minimum: 0.05
