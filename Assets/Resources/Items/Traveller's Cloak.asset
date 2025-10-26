@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Traveller's Cloak
   m_EditorClassIdentifier: 
   itemName: Traveller's Cloak
-  itemDescription: A swifty cloak that provices increased movement speed.
+  itemDescription: 
   itemTag: 
   itemFlavourText: Dusty and stained, but will still aid in stealthing those who
     wish not to be seen.

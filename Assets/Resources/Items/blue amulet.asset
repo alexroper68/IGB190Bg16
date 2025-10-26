@@ -10,27 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: sharp weapon
+  m_Name: blue amulet
   m_EditorClassIdentifier: 
-  itemName: sharp weapon
+  itemName: blue amulet
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: many amulets are formed from a normal stone imbued with a colour
+    of the highest intensity. this one is blue, so it calms the mind and reduces
+    exertion.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 63bbf1e1658caa346b0e6300b0209f45, type: 3}
-  itemType: 2
-  itemRarity: 1
-  itemCost: 1500
+  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
+  itemType: 1
+  itemRarity: 0
+  itemCost: 500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 0
-    minimum: 10
-    maximum: 10
-    isPercent: 0
-  - stat: 11
-    minimum: 1
-    maximum: 1
-    isPercent: 0
+  - stat: 8
+    minimum: 0.1
+    maximum: 0.1
+    isPercent: 1
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
@@ -39,17 +37,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1162436017
+      scriptUID: 1849744238
       hasWait: 0
       eventNodes:
-      - rid: 4304569715425804288
+      - rid: 2305487356755968011
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 670286047
+      scriptUID: 1510525680
       hasWait: 0
       eventNodes:
-      - rid: 4304569715425804289
+      - rid: 2305487356755968012
       conditionNodes: []
       actionNodes: []
   references:
@@ -57,7 +55,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4304569715425804288
+    - rid: 2305487356755968011
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -78,7 +76,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4304569715425804289
+    - rid: 2305487356755968012
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: silk boots
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: a rare silk, gilded with pure fortune makes up these footwear.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: a49193b555b34a046a80294f41fb8bf9, type: 3}
   itemType: 4

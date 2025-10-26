@@ -15,7 +15,9 @@ MonoBehaviour:
   itemName: ancient battleaxe
   itemDescription: A powerful weapon, strong only when it hits firm
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: this artifact was forged eternities ago, and accounts on who forged
+    it are often conflicting. some say it was the dwarves of ancient times, others
+    the sourcerer, but all know that it is unfathomably old and powerful.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 7d2c5bf95d4481241b61ab4d3196f11c, type: 3}
   itemType: 2

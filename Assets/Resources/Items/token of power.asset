@@ -15,7 +15,9 @@ MonoBehaviour:
   itemName: token of power
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: this is an ancient coin, forged for nobility and passed on thorugh
+    countless hands oven the ages, retaining the original spark of power. some say
+    it grants preternatural luck.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 490b8ea16029aca409a0ab5c570bb96e, type: 3}
   itemType: 1

@@ -15,9 +15,10 @@ MonoBehaviour:
   itemName: jewelled ring
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: a rare ring crafted for a wealthy merchant.  due to the arcane
+    power of rings, an otherwise mundane enchantment now has battle applications.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 50f02582f340d894492baa25ce0f47bb, type: 3}
+  itemIcon: {fileID: 21300000, guid: 74147d83c76aa6945ae2be73712532e1, type: 3}
   itemType: 0
   itemRarity: 1
   itemCost: 1500
