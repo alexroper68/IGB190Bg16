@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
-  m_Name: fury potion
+  m_Name: Fury Potion
   m_EditorClassIdentifier: 
   engine:
     rid: 4304569716078542862
-  abilityName: fury potion
+  abilityName: Fury Potion
   abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: 2fe87851ebabd584cbbbe37418ef642d, type: 3}
   targetMode: 0
