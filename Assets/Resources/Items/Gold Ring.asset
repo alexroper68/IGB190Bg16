@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Gold Ring
   m_EditorClassIdentifier: 
   itemName: Gold Ring
-  itemDescription: an artefact which concentrates power.
+  itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: an artefact which concentrates power, doe to being a ring and
+    perturbing natural mana.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 70429bf7d5f2bf341be1c31492f4ecd0, type: 3}
   itemType: 0

@@ -10,23 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Short Sword
+  m_Name: iron plate
   m_EditorClassIdentifier: 
-  itemName: Short Sword
-  itemDescription: A fast attack weapon that increases mobility.
+  itemName: iron plate
+  itemDescription: 
   itemTag: 
-  itemFlavourText: A shorter version of the long sword, it deems quick, and sharp.
+  itemFlavourText: a hardy set of plates which covers most of the body. it is iron,
+    so not too powerful.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 43d4e2cf97dee3142b1cb5dd30bf4b56, type: 3}
-  itemType: 2
+  itemIcon: {fileID: 21300000, guid: f525fc04d7de01647a20ff599129b2f1, type: 3}
+  itemType: 3
   itemRarity: 0
   itemCost: 500
   randomStatCount: 0
   guaranteedStats:
-  - stat: 3
-    minimum: 0.1
-    maximum: 0.1
-    isPercent: 1
+  - stat: 1
+    minimum: 10
+    maximum: 10
+    isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1
@@ -35,17 +36,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1297166556
+      scriptUID: 2055215292
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474256
+      - rid: 4304569558383722498
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1629461439
+      scriptUID: 1375930473
       hasWait: 0
       eventNodes:
-      - rid: 6394421181470474257
+      - rid: 4304569558383722499
       conditionNodes: []
       actionNodes: []
   references:
@@ -53,7 +54,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6394421181470474256
+    - rid: 4304569558383722498
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -74,7 +75,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6394421181470474257
+    - rid: 4304569558383722499
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Swashbucklers's Jacket
   m_EditorClassIdentifier: 
   itemName: Swashbucklers's Jacket
-  itemDescription: A fashion choice that grants speed and critical hit damage.
+  itemDescription: 
   itemTag: 
-  itemFlavourText: Although stylish, it is very impracticle in battle, and that's
-    okay.
+  itemFlavourText: Although stylish, and impractical in battle, when it works, nothing
+    can compate.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: c2a8abde6fd547746952a2a966a7c197, type: 3}
   itemType: 3

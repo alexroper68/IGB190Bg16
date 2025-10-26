@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Mistwalkers
   m_EditorClassIdentifier: 
   itemName: Mistwalkers
-  itemDescription: 
+  itemDescription: as the wearer moves, they become resistant to damage
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: these boots were crafted from the hides of a potent shadowbeast
+    that stalked across enitre universes without being seen even by the omniscient.
+    it won't quite allow you to reach that height of stealth, but it will still be
+    helpful.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: d687f263463ca254ba211f0a97124ada, type: 3}
   itemType: 4

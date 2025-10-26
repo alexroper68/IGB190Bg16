@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Hero's Treasure
   m_EditorClassIdentifier: 
   itemName: Hero's Treasure
-  itemDescription: Reduces abillity costs
+  itemDescription: 
   itemTag: 
-  itemFlavourText: 'A treasure strong enough to deflect the strongest of blows. '
+  itemFlavourText: A treasure strong enough to deflect the strongest of blows. it
+    instills a sort of vigour in the wearer given it's heroic energies.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 875ee4e44e1620e4a97d68b427ca5e1d, type: 3}
   itemType: 3

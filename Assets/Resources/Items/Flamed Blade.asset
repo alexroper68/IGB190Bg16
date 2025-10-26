@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Flamed Blade
   m_EditorClassIdentifier: 
   itemName: Flamed Blade
-  itemDescription: A weapon that deals high damage and rapid attacks.
+  itemDescription: 
   itemTag: 
   itemFlavourText: A fury blade forged in the depths of hell, it burns more with
     rage than fire.

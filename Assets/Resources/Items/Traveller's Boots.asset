@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Traveller's Boots
   m_EditorClassIdentifier: 
   itemName: Traveller's Boots
-  itemDescription: Endurance based boots best for speed.
+  itemDescription: 
   itemTag: 
   itemFlavourText: Torn, ripped, and old, but have never failed a single journey.
   classRequirement: 

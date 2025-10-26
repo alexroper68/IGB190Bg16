@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Scout's Armor
   m_EditorClassIdentifier: 
   itemName: Scout's Armor
-  itemDescription: A light armor set that offers slight increase in speed and mild
-    damage protection.
+  itemDescription: 
   itemTag: 
   itemFlavourText: Light but sturdy, perfect for those who like to be light on their
-    feet.
+    feet. streamlined to a point and oozing with energy.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: f525fc04d7de01647a20ff599129b2f1, type: 3}
   itemType: 3

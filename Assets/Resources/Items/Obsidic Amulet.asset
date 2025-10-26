@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Obsidic Amulet
   m_EditorClassIdentifier: 
   itemName: Obsidic Amulet
-  itemDescription: Reduces ability cooldowns.
+  itemDescription: 
   itemTag: 
-  itemFlavourText: A shard of obsibian, empowered with dark souls.
+  itemFlavourText: A shard of obsibian, empowered with dark souls. such dark sould
+    must be harvested from an afterlife of pure shadow.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 371f7aca98ca60744bebba125976b879, type: 3}
   itemType: 1
   itemRarity: 1
-  itemCost: 2400
+  itemCost: 1500
   randomStatCount: 0
   guaranteedStats:
   - stat: 7

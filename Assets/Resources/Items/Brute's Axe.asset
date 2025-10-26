@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Brute's Axe
   m_EditorClassIdentifier: 
   itemName: Brute's Axe
-  itemDescription: A strong weapon that sacrifices speed for strength.
+  itemDescription: 
   itemTag: 
   itemFlavourText: Sharp, heavy, and savage, wielded by those with strength.
   classRequirement: 

@@ -506,7 +506,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 4
+        value: 2
     - rid: 2305486816113066075
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -745,7 +745,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 8
+        value: 12
     - rid: 2305486816113066112
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -787,7 +787,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 8
+        value: 12
     - rid: 2305486816113066114
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:

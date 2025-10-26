@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
+  m_Name: ancient battleaxe
+  m_EditorClassIdentifier: 
+  itemName: ancient battleaxe
+  itemDescription: A powerful weapon, strong only when it hits firm
+  itemTag: 
+  itemFlavourText: this artifact was forged eternities ago, and accounts on who forged
+    it are often conflicting. some say it was the dwarves of ancient times, others
+    the sourcerer, but all know that it is unfathomably old and powerful.
+  classRequirement: 
+  itemIcon: {fileID: 21300000, guid: 7d2c5bf95d4481241b61ab4d3196f11c, type: 3}
+  itemType: 2
+  itemRarity: 2
+  itemCost: 3000
+  randomStatCount: 0
+  guaranteedStats:
+  - stat: 11
+    minimum: 3
+    maximum: 3
+    isPercent: 0
+  randomisableStats: []
+  minimumDropLevel: 0
+  canPurchaseInShop: 1
+  canDropOffMonster: 1
+  template: {fileID: 0}
+  engine:
+    scripts:
+    - scriptName: Item Equipped
+      scriptUID: 1026800871
+      hasWait: 0
+      eventNodes:
+      - rid: 2305487268801937484
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Item Unequipped
+      scriptUID: 26636368
+      hasWait: 0
+      eventNodes:
+      - rid: 2305487268801937485
+      conditionNodes: []
+      actionNodes: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2305487268801937484
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptLoaded
+        functionDescription: Time/On script loaded
+        functionDynamicDescription: On script loaded
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 2305487268801937485
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptUnloaded
+        functionDescription: Time/On script unloaded
+        functionDynamicDescription: On script unloaded
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []

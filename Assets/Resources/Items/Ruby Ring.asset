@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Ruby Ring
   m_EditorClassIdentifier: 
   itemName: Ruby Ring
-  itemDescription: a ring that changes many things, but subtly each.
+  itemDescription: 
   itemTag: 
-  itemFlavourText: A token of luck, glowing warm and radient.
+  itemFlavourText: A token of luck, glowing warm and radient. it changes many things,
+    but subtly each.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: a8bc19c7daadb6044b071d234a1d62a3, type: 3}
   itemType: 0
   itemRarity: 0
-  itemCost: 800
+  itemCost: 500
   randomStatCount: 5
   guaranteedStats: []
   randomisableStats:
